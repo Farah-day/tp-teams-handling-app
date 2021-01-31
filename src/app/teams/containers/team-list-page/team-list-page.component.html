@@ -1,0 +1,15 @@
+<mat-card class="team-card-box">
+  <mat-card-content>
+    <button mat-raised-button color="basic" (click)="addTeam()">
+      Add
+    </button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="team-card-box" *ngFor="let team of teams;">
+  <mat-card-content>
+    <button mat-raised-button color="primary" (click)="onSelectTeam(team)">
+    {{ team.name }}
+    </button>
+  </mat-card-content>
+</mat-card>

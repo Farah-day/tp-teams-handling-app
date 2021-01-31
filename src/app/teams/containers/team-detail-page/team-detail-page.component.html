@@ -1,0 +1,12 @@
+<div class="team-detail" *ngIf="team">
+  {{ team.id }} - {{ team.name }} - {{ team.slogan }}
+</div>
+
+<div class="team-detail">
+  <button mat-raised-button color="basic" (click)="editTeam()">
+    Edit
+  </button>
+  <button mat-raised-button color="primary" (click)="back()">
+    Back
+  </button>
+</div>
