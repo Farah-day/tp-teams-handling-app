@@ -28,7 +28,7 @@ export class TeamAddPageComponent implements OnInit {
     });
   }
 
-  createTeam(){
+  createTeam(): void{
     if (this.addTeamForm.invalid) {
       return
     }
